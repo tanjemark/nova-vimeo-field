@@ -1,6 +1,6 @@
 <?php
 
-namespace Tanjemark\Vimeo;
+namespace Tanjemark\Fields;
 
 use Laravel\Nova\Fields\Field;
 

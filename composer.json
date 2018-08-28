@@ -1,9 +1,11 @@
 {
-    "name": "tanjemark/vimeo",
+    "name": "tanjemark/nova-vimeo-field",
     "description": "A Laravel Nova field.",
     "keywords": [
         "laravel",
-        "nova"
+        "nova",
+        "field",
+        "vimeo"
     ],
     "license": "MIT",
     "require": {
@@ -11,13 +13,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Tanjemark\\Vimeo\\": "src/"
+            "Tanjemark\\Fields\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Tanjemark\\Vimeo\\FieldServiceProvider"
+                "Tanjemark\\Fields\\FieldServiceProvider"
             ]
         }
     },

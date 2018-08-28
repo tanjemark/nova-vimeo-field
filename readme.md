@@ -1,4 +1,4 @@
-# Nova Vimeo-Field
+# Nova Vimeo Field
 
 
 ![Vimeo player](./docs/vimeo_player.png)
@@ -7,11 +7,13 @@
 
 You can install the package in to a Laravel app that uses Nova via composer:
 ```bash
-composer require tanjemark/vimeo
+composer require tanjemark/nova-vimeo-field
 ```
 
 ## Usage
 ```php
+use Tanjemark\Fields\Vimeo;
+
 Vimeo::make('Vimeo field name'),
 ```
 The field extends the base Laravel\Nova\Fields\Field, so all the usual methods are available.
@@ -20,6 +22,8 @@ The field extends the base Laravel\Nova\Fields\Field, so all the usual methods a
 
 ### With meta
 ```php
+use Tanjemark\Fields\Vimeo;
+
 Vimeo::make('Vimeo field name')
     ->withMeta([
         'options' => [
@@ -30,5 +34,5 @@ Vimeo::make('Vimeo field name')
 ```
 
 ## License
-The MIT License (MIT). Please see License File for more information.
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
 
