@@ -1,14 +1,14 @@
-<template>    
+<template>
     <panel-item :field="field">
-        <template slot="value">        
+        <template slot="value">
             <iframe
-                ref="player" 
-                :src="videoUrl"                
-                :height="height" 
+                ref="player"
+                :src="videoUrl"
+                :height="height"
                 :width="width"
-                frameborder="0" 
-                webkitallowfullscreen 
-                mozallowfullscreen 
+                frameborder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
                 allowfullscreen
             >
             </iframe>
@@ -19,17 +19,17 @@
 <script>
     export default {
         props: ['resource', 'resourceName', 'resourceId', 'field'],
-        
-        computed: {       
+
+        computed: {
             videoUrl() {
-                return this.field.value;
+                return `https://player.vimeo.com/video/${this.field.value}`;
             },
-            height() {                
+            height() {
                 return this.field.options.height;
             },
             width() {
                 return this.field.options.width;
-            },       
+            },
         },
     }
 </script>
