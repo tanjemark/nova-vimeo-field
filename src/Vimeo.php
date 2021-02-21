@@ -12,8 +12,8 @@ class Vimeo extends Field
      * @var string
      */
     public $component = 'vimeo';
-    
-    public function __construct(string $name, ?string $attribute = null, ?mixed $resolveCallback = null)
+
+    public function __construct(string $name, ?string $attribute = null, ?callable $resolveCallback = null)
     {
         parent::__construct($name, $attribute, $resolveCallback);
         $this->withMeta([
